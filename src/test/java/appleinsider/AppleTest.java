@@ -1,6 +1,5 @@
 package appleinsider;
 
-import Core.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,13 +1,8 @@
 package hr;
 
-import Core.BaseSelenideTest;
-import Core.BaseTest;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class HrTest extends BaseSelenideTest {
     /**
