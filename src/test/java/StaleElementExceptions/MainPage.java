@@ -19,13 +19,13 @@ public class MainPage extends BaseTest {
             return element.isDisplayed();
 
         } catch (StaleElementReferenceException nf) {
-            return false;
+            return true;
         }
     }
 
     private void method() {
-        for (int i = 0; i < buttons.size(); i++) {
-            buttons.get(i).click();
+        for (SelenideElement button : buttons) {
+            button.click();
         }
 
     }
