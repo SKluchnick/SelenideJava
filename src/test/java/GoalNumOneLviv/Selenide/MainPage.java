@@ -16,22 +16,28 @@ public class MainPage {
 
     private final SelenideElement textBoxInput = $x("//input[@type='text']");
 
-//    public MainPage(String url) {
-//        Selenide.open(url);
-//    }
+    public MainPage(String url) {
+        Selenide.open(url);
+    }
+    public MainPage() {
+
+    }
 
 
     /**
      *Cтавим значение в value и нажимаем Enter
      * @param searchString поисковая строка
+     * логика метода переход на следующую страницу searchPage
+     *  поэтому делаем возврат класса с метода
      */
-    public void search(String searchString){
+    public SearchPage search(String searchString){
         textBoxInput.setValue(searchString);
         textBoxInput.sendKeys(Keys.ENTER);
-
+        return new SearchPage();
     }
 
-    public void openWebSite(String url){
+    public SearchPage openWebSite(String url){
         Selenide.open(url);
+        return new  SearchPage();
     }
 }
