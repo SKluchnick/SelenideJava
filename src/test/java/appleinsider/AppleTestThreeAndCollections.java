@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 import static com.codeborne.selenide.Selenide.$$x;
 
-public class AppleTestAndCollections extends BaseTest {
+public class AppleTestThreeAndCollections extends BaseTestThree {
 
     private final static String BASE_URL = "https://appleinsider.ru/";
     private final static String SEARCH_STRING = "Чем iPhone 13 отличается от iPhone 12";

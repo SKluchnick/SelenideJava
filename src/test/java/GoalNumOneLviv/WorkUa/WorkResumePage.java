@@ -1,9 +1,8 @@
-package WorkUa;
+package GoalNumOneLviv.WorkUa;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
